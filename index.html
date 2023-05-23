@@ -66,5 +66,159 @@
     <br> 
     <h5>Atributo download</h5>
     <a href="/assets/images/gatohacker.jpg" download>Descarga la imagen</a>
+    <br> 
+    <h3>Etiqueta de imagen</h3>
+    <!--<img> es una etiqueta que permite almacenar imagenes que las hace visible
+        Atributos de la etiqueta:
+        src: define la ubicación del archivo (ya sea local o remota)
+        alt: define un texto alterno a la imagen
+        width: define el ancho de la imagen
+        height: define el alto de la imagen
+    -->
+    <p>
+        Ella es Kiara, tiene dos años y es muy glotona. Le gustan las salchichas y la cecina. Tiene tres peluches y no se los presta a nadie. 
+        Es la consentida de la casa, aunque sea la más enojona.
+    </p>
+    <img src="/assets/images/Kiara.jpg" alt="Foto de kiara pensando" width="300px">
+    <br>
+    <h4>El código no estaría completo sin una Jojo referencia</h4>
+    <img src="https://i1.sndcdn.com/artworks-000199793352-lclktj-t500x500.jpg" width="200rem" alt="Los hombres del pilar, Jojos segunda temporada">
+    <br>
+    <h4>Unidades de medida CSS</h4>
+    <a href="https://www.w3schools.com/cssref/css_units.php" target="_blank"><img src="/assets/images/agretssuko.jpeg"></a>
+    <br>
+    <h3>Listas</h3>
+    <!--Existen dos tipos de listas:
+        ordenadas: que siguen una secuendia, tienen una numeración
+        desordenadas: no tienen un proceso, no existe numeración . Existen varias viñetas
+    -->
+    <h4>Ejemplo de lista ordenada</h4>
+    <h5>Lista de asistencia</h5>
+    <ol>
+        <li>Armando</li>
+        <li>Carlos</li>
+        <li>Mari</li>
+        <li>Zabdiel</li>
+    </ol>
+    <h4>Ejemplo de lista desordenada</h4>
+    <h5>Mascotas CH28</h5>
+    <ul>
+        <li>Kiara</li>
+        <li>Laika</li>
+        <li>Lucky</li>
+        <li>Morgan</li>
+        <li>Appa</li>
+    </ul>
+    <h4>Listas anidadas</h4>
+    <ol>Tacos mexicanos
+        <li>Pastor</li>
+            <ul>
+                <li>Con salsa de la que pica</li>
+                <li>Con salsa de la que no pica</li>
+            </ul>
+        <li>Suadero</li>
+            <ul>
+                <li>Con queso</li>
+                <li>Sin queso</li>
+                <li>Con papas</li>
+            </ul>
+        <li>Carnitas</li>
+            <ol>
+                <li>surtidas
+                    <ul>
+                        <li>Naturales</li>
+                        <li>Con todo</li>
+                    </ul>
+                </li>
+                <li>Maciza
+                    <ul>
+                        <li>Naturales</li>
+                        <li>Con todo</li>
+                    </ul>
+                </li>
+
+            </ol>
+        <li>Canasta</li>
+
+    </ol>
+    <h3>Lista de películas favoritas por géneros</h3>
+    <ul>
+        <li>Romance
+            <ol>
+                <li>Orgullo y Prejuicio</li>
+                <li>Emma</li>
+                <li>La esposa del viajero del tiempo</li>
+            </ol>
+        </li>
+        <li>Comedia
+            <ol>
+                <li>Shrek 2</li>
+                <li>Los locos Addams 2</li>
+                <li>Eurovisión</li>
+            </ol>
+        </li>
+        <li>Drama
+            <ol>
+                <li>Eterno resplandor de una mente sin recuerdos</li>
+                <li>El sacrificio del ciervo sagrado</li>
+                <li>Hay que hablar de Kevin</li>
+            </ol>
+        </li>
+        <li>Terror
+            <ol>
+                <li>La bruja</li>
+                <li>El Babadook</li>
+                <li>Suspiria</li>
+            </ol>
+        </li>
+    </ul>
+    <h3>Listas de definiciones</h3>
+    <!--Nos permite obtener listas de difiniciones. Sus etiquetas son:
+        <dl></dl> : indica que es una lista de definición
+        <dt></dt> : es un término de definición
+        <dd></dd> : es una definición
+    -->
+    <dl>
+        <dt>Perrito</dt>
+        <dd>Es un animal canino doméstico, mamífero de cuatro patas. Algunos viven en las casa y otros viven en la calle :c </dd>
+        <dt>Gatito</dt>
+        <dd>Es una animal mamfífero, felino con garritas ocultas que le gusta visitar otras casas</dd>
+        <dt>Conejo</dt>
+        <dd>Es un animal mamífero, herbívoro, con orejas grandes</dd>
+    </dl>
+    <br>
+    <h3>Etiquetas de división</h3>
+    <!--L etiqueta de división <div></div> se utiliza como contenedor de elementos htm que luego se diseñan con css o se manipulan con JavaScript. 
+        Éstas pueden tener todos los atributos disponibles, sin embargo los más importantes son los atributos globales:
+        class: Permite clasificar un conjunto de elementos que comparten características
+        id:
+        Se puede poner cualquier tipo de contenido dentro de la etiqueta div
+    -->
+    <h4>El elemento div</h4>
+    <div>Hola, soy un contenedor div con un texto
+        <h5>Soy un H5 dentro de un div</h5>
+        <!--<p>Soy un párrafo dentro de un div</p>-->
+    </div>
+    <div class="contenedor" id="Abuelo" style="color: gray;border: 1px solid black; background-color: lavender;">Soy el contenedor más grande
+        <div class="contenedor" id="padre" style="color: blue; border: 1px solid red; background-color: gold;">
+                <p>Hola, soy u párrafo dentro de un div</p>
+                <h4>Soy un H4 hermano del párrafo anterior</h4>
+                <div class="contenedor" ide="hijo" style="color: red; border: 3px solid green; background-color: aqua;">
+                    Hola, sou un div anidado
+                    <div style="color: yellowgreen; border: 1px solid purple; background-color: gray;">
+                        Soy un div, dentro del div anidado.
+                    </div>
+                </div>  
+        </div>
+    </div>
+    <h3>Etiqueta span</h3> 
+    <!--La etiqueta span es un contenedor de línea que se usa para marcar una parte de un documento-->
+        <p style="color: blueviolet;">
+            Ella es Kiara, tiene dos años y es muy glotona. Le gustan las salchichas y la cecina. 
+            Tiene tres <span style="color: green;">peluches</span> y no se los presta a nadie. 
+            Es <span style="color: deeppink; font-family: Helvetica; font-weight: 100;">la consentida de la casa</span>, aunque sea la más enojona.
+        </p>
+    <br>
+    <br>
 </body>
 </html>
